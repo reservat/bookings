@@ -6,18 +6,9 @@ $klein = new \Klein\Klein();
 
 $klein->respond(function ($request, $response, $service, $app) {
 
-	// TODO: Find a better config solution
-
     $app->register('config', function() {
 
         $config = new \Bookings\Config();
-
-        var_dump($config);
-
-        $config = new stdClass();
-        $config->coreTimes = $coreTimes;
-        $config->overrides = $overrides;
-
         return $config;
 
     });
@@ -46,7 +37,7 @@ $klein->respond('GET', '/slots', function ($req, $res, $service, $app) {
 });
 
 $klein->respond('GET', '/booking', function ($req, $res, $service, $app) {
-	var_dump($app->config);
+	var_dump($app->config->elastic);
 });
 
 $klein->dispatch();

@@ -1,0 +1,7 @@
+<? 
+
+namespace Bookings;
+
+class Elastic {
+	
+}

@@ -3,5 +3,10 @@
          "elasticsearch/elasticsearch": "~1.0",
           "klein/klein": "~2.1",
           "pwesterdale/openingtimes": "dev-master"
-     }
+     },
+     "autoload": {
+		"psr-4": {
+			"Bookings\\": ["Bookings/"]
+		}
+	},
 }

@@ -9,7 +9,7 @@ $klein->respond(function ($request, $response, $service, $app) {
 	// TODO: Find a better config solution
 
     $app->register('config', function() {
-
+        \Bookings\Config();
     	require_once __DIR__ . '/config.php';
 
         $config = new stdClass();

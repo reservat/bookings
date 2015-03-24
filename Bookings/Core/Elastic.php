@@ -2,11 +2,13 @@
 
 namespace Bookings\Core;
 
+use Elasticsearch\Client;
+
 class Elastic {
 
 	public function __construct($details){
 		$params = ['hosts' => ['http://'.$details['user'].':'.$details['pass'].'@'.$details['host']]];
-    	$this->_client = new \Elasticsearch\Client($params);
+    	$this->_client = new Client($params);
 	}
 
 	public function getClient(){

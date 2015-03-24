@@ -17,9 +17,4 @@ $klein->respond(function ($request, $response, $service, $app) {
 
 });
 
-$klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
-    $esBooking = new \Bookings\Mapper\ESBookingMapper(); 
-    $esBooking->putMapping($app->es->getClient());
-});
-
 $klein->dispatch();

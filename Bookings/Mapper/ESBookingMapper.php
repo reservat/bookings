@@ -5,7 +5,9 @@ namespace Bookings\Mapper;
 class ESBookingMapper extends ESCoreMapper {
 
     protected $_index = 'bookings';
+    
     protected $_type = 'booking';
+
 	protected $_mapping = [
 		'_source' => [
                 'enabled' => true

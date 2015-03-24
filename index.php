@@ -23,7 +23,8 @@ $klein->respond(function ($request, $response, $service, $app) {
 });
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
-    Log::addError('HODOR HODOR HODR');
+	$otMapper = new Bookings\Mapper\ESOpeningTimesMapper();
+	$otMapper->putMapping($app->es->getClient());
 });
 
 $klein->dispatch();

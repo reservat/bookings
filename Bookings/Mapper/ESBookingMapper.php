@@ -2,7 +2,7 @@
 
 namespace Bookings\Mapper;
 
-class ESBookingMapper {
+class ESBookingMapper extends ESCoreMapper {
 
     protected $_index = 'bookings';
     protected $_type = 'booking';
@@ -16,7 +16,7 @@ class ESBookingMapper {
             ],
             'venueId' => [
             	'type' => 'integer'
-            ]
+            ],
             'tableId' => [
             	'type' => 'integer'
             ],
@@ -24,9 +24,6 @@ class ESBookingMapper {
                 'type' => 'integer'
             ],
             'tableCapacity' => [
-            	'type' => 'integer'
-            ],
-            'tsStart' => [
             	'type' => 'integer'
             ],
             'dateStart' => [

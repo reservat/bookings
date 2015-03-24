@@ -1,7 +1,0 @@
-<?
-
-namespace Bookings;
-
-class Booking {
-	
-}

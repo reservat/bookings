@@ -2,12 +2,14 @@
 
 namespace Bookings\Core;
 
-class ApiSuccess extends ApiResponse {
+class ApiSuccess extends ApiResponse
+{
 
 	protected $_code = '200';
 	protected $_data = [];
 
-	public function buildBody(){
+	public function buildBody()
+	{
 
 		$body = [
 			'status' => $this->getCode(),

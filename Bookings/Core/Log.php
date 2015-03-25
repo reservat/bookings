@@ -6,13 +6,14 @@ use Bookings\Core\Config;
 use Monolog\Logger;
 use Monolog\Handler\SlackHandler;
 
-class Log {
+class Log
+{
 
 	protected static $_instance = null;
 	protected static $_log = null;
 
-	public function __construct(){
-
+	public function __construct()
+	{
 		$config = new Config();
 		$config = $config->log['slack'];
 
@@ -27,17 +28,19 @@ class Log {
 			$config['emote'], 
 			Logger::ERROR
 		));
-
 	}
 
-	public static function log($func, $args){
-		if(static::$_instance === null){
+	public static function log($func, $args)
+	{
+		if(static::$_instance === null)
+		{
 			static::$_instance = new static();
 		}
 		static::$_log->$func($args);
 	}
 
-	public static function __callstatic($func, $args){
+	public static function __callstatic($func, $args)
+	{
 		static::log($func, implode($args));
 	}
 

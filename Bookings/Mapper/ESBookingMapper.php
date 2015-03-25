@@ -2,7 +2,8 @@
 
 namespace Bookings\Mapper;
 
-class ESBookingMapper extends ESCoreMapper {
+class ESBookingMapper extends ESCoreMapper
+{
 
     protected $_index = 'bookings';
     
@@ -37,15 +38,18 @@ class ESBookingMapper extends ESCoreMapper {
         ]
 	];
 
-	public function getMapping(){
+	public function getMapping()
+    {
 		return $this->_mapping;
 	}
 
-	public function getIndex(){
+	public function getIndex()
+    {
 		return $this->_index;
 	}
 
-	public function getType(){
+	public function getType()
+    {
 		return $this->_type;
 	}
 

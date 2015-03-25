@@ -2,7 +2,8 @@
 
 namespace Bookings\Mapper;
 
-class ESOpeningTimesMapper extends ESCoreMapper {
+class ESOpeningTimesMapper extends ESCoreMapper
+{
 
     protected $_index = 'openingtimes';
 

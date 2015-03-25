@@ -2,11 +2,13 @@
 
 namespace Bookings\Core;
 
-class ApiError extends ApiResponse {
+class ApiError extends ApiResponse 
+{
 
 	protected $_code = '400';
 
-	public function buildBody(){
+	public function buildBody()
+	{
 
 		$errors = [];
 
@@ -26,4 +28,5 @@ class ApiError extends ApiResponse {
 		return $body;
 
 	}
+	
 }

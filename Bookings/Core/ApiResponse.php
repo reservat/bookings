@@ -2,33 +2,39 @@
 
 namespace Bookings\Core;
 
-abstract class ApiResponse {
+abstract class ApiResponse
+{
 
 	protected $_data = [];
 	protected $_code = 200;
 
-	public function __construct($data, $code = false){
+	public function __construct($data, $code = false)
+	{
 		$this->_data = $data;
 		if($code){
 			$this->_code = $code;
 		}
 	}
 
-	public function getCode(){
+	public function getCode()
+	{
 		return $this->_code;
 	}
 
-	public function getData(){
+	public function getData()
+	{
 		return $this->_data;
 	}
 
-	public function serve($res){
+	public function serve($res)
+	{
 		$res->code($this->getCode());
 		$res->json($this->buildBody());
 		$res->send();
 	}
 
-	public static function build($data, $code = false){
+	public static function build($data, $code = false)
+	{
 		return new static($data, $code);
 	}
 

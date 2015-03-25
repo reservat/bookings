@@ -4,10 +4,11 @@ namespace Bookings\Mapper;
 
 use Bookings\Core\Log;
 
-class ESCoreMapper {
+class ESCoreMapper
+{
 
-	public function putMapping($client){
-
+	public function putMapping($client)
+	{
 		try {
 			$this->deleteMapping($client);
 		} catch (\Exception $e) {
@@ -25,20 +26,24 @@ class ESCoreMapper {
 
 	}
 
-	public function deleteMapping($client){
+	public function deleteMapping($client)
+	{
 		$params['index'] = $this->getIndex();
 		$client->indices()->delete($params);
 	}
 
-	public function getMapping(){
+	public function getMapping()
+	{
 		return $this->_mapping;
 	}
 
-	public function getIndex(){
+	public function getIndex()
+	{
 		return $this->_index;
 	}
 
-	public function getType(){
+	public function getType()
+	{
 		return $this->_type;
 	}
 

@@ -2,7 +2,10 @@
 
 namespace Bookings\Mapper;
 
-class ESBookingMapper extends ESCoreMapper
+use Bookings\Interfaces\DataMapperInterface;
+use Bookings\Interfaces\EntityInterface;
+
+class ESBookingMapper extends ESDataMapper implements DataMapperInterface
 {
 
     protected $_index = 'bookings';
@@ -20,14 +23,15 @@ class ESBookingMapper extends ESCoreMapper
             'venueId' => [
             	'type' => 'integer'
             ],
-            'tableId' => [
-            	'type' => 'integer'
+            'state' => [
+                'type' => 'string'
+            ],
+            'tableIds' => [
+                "type"  => "integer", 
+                "index_name" => "tableId"
             ],
             'guests' => [
                 'type' => 'integer'
-            ],
-            'tableCapacity' => [
-            	'type' => 'integer'
             ],
             'dateStart' => [
             	'type' => 'date'
@@ -38,19 +42,24 @@ class ESBookingMapper extends ESCoreMapper
         ]
 	];
 
-	public function getMapping()
+    public function insert(EntityInterface $booking)
     {
-		return $this->_mapping;
-	}
 
-	public function getIndex()
-    {
-		return $this->_index;
-	}
+    }
 
-	public function getType()
+    public function update(EntityInterface $booking)
     {
-		return $this->_type;
-	}
+
+    }
+
+    public function save(EntityInterface $booking)
+    {
+
+    }
+
+    public function delete(EntityInterface $booking)
+    {
+
+    }
 
 }

@@ -2,7 +2,7 @@
 
 namespace Bookings\Mapper;
 
-class ESOpeningTimesMapper extends ESCoreMapper
+class ESOpeningTimesMapper extends ESDataMapper implements DataMapperInterface
 {
 
     protected $_index = 'openingtimes';
@@ -44,5 +44,25 @@ class ESOpeningTimesMapper extends ESCoreMapper
             ],
         ]
 	];
+
+    public function insert(EntityInterface $openingtimes)
+    {
+
+    }
+
+    public function update(EntityInterface $openingtimes)
+    {
+
+    }
+
+    public function save(EntityInterface $openingtimes)
+    {
+
+    }
+
+    public function delete(EntityInterface $openingtimes)
+    {
+
+    }
 
 }

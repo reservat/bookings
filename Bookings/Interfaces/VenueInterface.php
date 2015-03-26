@@ -12,7 +12,6 @@ interface VenueInterface
 	public function getLastLogin();
 	public function getPostcode();
 	public function getLatLng();
-	public function getCapacity();
 	public function getSlotInterval();
 	public function getOccupiedTime();
 }

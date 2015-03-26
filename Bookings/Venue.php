@@ -4,7 +4,7 @@ namespace Bookings;
 
 use \Bookings\Interfaces\VenueInterface;
 
-class Venue implements VenueInterface 
+class Venue implements VenueInterface, EntityInterface
 {
 
 	protected $_name = null;
@@ -16,7 +16,6 @@ class Venue implements VenueInterface
 	protected $_postcode = null;
 	protected $_latitude = null;
 	protected $_longitude = null;
-	protected $_capacity = null;
 	protected $_slotInterval = null;
 	protected $_occupiedTime = null;
 
@@ -31,7 +30,6 @@ class Venue implements VenueInterface
 		$this->_postcode = $postcode;
 		$this->_latitude = $latitude;
 		$this->_longitude = $longitude;
-		$this->_capacity = $capacity;
 		$this->_slotInterval = $slotInterval;
 		$this->_occupiedTime = $occupiedTime;
 	}
@@ -76,11 +74,6 @@ class Venue implements VenueInterface
 		return ['lat' => $this->_latitude, 'lng' => $this->_longitude];
 	}
 
-	public function getCapacity()
-	{
-		return $this->_capacity;
-	}
-
 	public function getSlotInterval()
 	{
 		return $this->_slotInterval;
@@ -96,12 +89,12 @@ class Venue implements VenueInterface
 		return [
 			'name' => $this->_name,
 			'description' => $this->_description,
-			'email' => $this->_description,
-			'lastLogin' => $this->_description,
-			'postcode' => $this->_description,
-			'latitude' => $this->_description,
-			'longitude' => $this->_description,
-			'capacity' => $this->_capacity,
+			'email' => $this->_email,
+			'password' => $this->_email,
+			'lastLogin' => $this->_lastLogin,
+			'postcode' => $this->_postcode,
+			'latitude' => $this->_latitude,
+			'longitude' => $this->_longitude,
 			'slotInterval' => $this->_slotInterval,
 			'occupiedTime' => $this->_occupiedTime
 		];

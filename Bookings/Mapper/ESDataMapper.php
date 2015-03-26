@@ -4,7 +4,7 @@ namespace Bookings\Mapper;
 
 use Bookings\Core\Log;
 
-class ESCoreMapper
+class ESDataMapper
 {
 
 	public function putMapping($client)

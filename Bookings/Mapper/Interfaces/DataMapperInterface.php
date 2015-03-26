@@ -2,6 +2,8 @@
 
 namespace Bookings\Mapper\Interfaces;
 
+use Bookings\Interfaces\EntityInterface;
+
 interface DataMapperInterface
 {
 	public function insert(EntityInterface $entity);

@@ -23,8 +23,11 @@ $klein->respond(function ($request, $response, $service, $app) {
 });
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
-	$bookingMapper = new \Bookings\Mapper\EsBookingMapper();
-	$bookingMapper->putMapping($app->es->getClient());
+
+	$booking = new \Bookings\Booking(1, 1, 'new', [1, 2, 3], 6, new Bookings\Core\DateTime(), new Bookings\Core\DateTime());
+	$bookingMapper = new \Bookings\Mapper\EsBookingMapper($app->es->getClient());
+	$bookingMapper->insert($booking);
+	
 });
 
 $klein->dispatch();

@@ -12,13 +12,18 @@ class ESBookingMapper extends ESDataMapper implements DataMapperInterface
     
     protected $_type = 'booking';
 
+    protected static $_id = 'bookingId';
+
 	protected $_mapping = [
 		'_source' => [
                 'enabled' => true
         ],
         'properties' => [
+            'bookingId' => [
+                'type' => 'string'
+            ],
             'customerId' => [
-                'type' => 'integer',
+                'type' => 'integer'
             ],
             'venueId' => [
             	'type' => 'integer'
@@ -41,25 +46,5 @@ class ESBookingMapper extends ESDataMapper implements DataMapperInterface
             ]
         ]
 	];
-
-    public function insert(EntityInterface $booking)
-    {
-
-    }
-
-    public function update(EntityInterface $booking)
-    {
-
-    }
-
-    public function save(EntityInterface $booking)
-    {
-
-    }
-
-    public function delete(EntityInterface $booking)
-    {
-
-    }
 
 }

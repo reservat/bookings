@@ -11,6 +11,8 @@ class ESOpeningTimesMapper extends ESDataMapper implements DataMapperInterface
 
     protected $_type = 'openingtimes';
 
+    protected static $_id = 'venueId';
+
 	protected $_mapping = [
 		'_source' => [
                 'enabled' => true
@@ -46,25 +48,5 @@ class ESOpeningTimesMapper extends ESDataMapper implements DataMapperInterface
             ],
         ]
 	];
-
-    public function insert(EntityInterface $openingtimes)
-    {
-
-    }
-
-    public function update(EntityInterface $openingtimes)
-    {
-
-    }
-
-    public function save(EntityInterface $openingtimes)
-    {
-
-    }
-
-    public function delete(EntityInterface $openingtimes)
-    {
-
-    }
 
 }

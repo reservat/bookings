@@ -60,6 +60,16 @@ class ESDataMapper
 
     public function insert(EntityInterface $entity)
     {
+    	$this->save($entity);
+    }
+
+    public function update(EntityInterface $entity)
+    {
+    	$this->save($entity);
+    }
+
+    public function save(EntityInterface $entity)
+    {
     	$params = [];
 		$params['body']  = $entity->toArray();
 
@@ -74,16 +84,6 @@ class ESDataMapper
 		} else {
 			throw new \Exception('Could not create booking');
 		}
-    }
-
-    public function update(EntityInterface $entity)
-    {
-
-    }
-
-    public function save(EntityInterface $entity)
-    {
-
     }
 
     public function delete(EntityInterface $entity)

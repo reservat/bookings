@@ -44,14 +44,14 @@ class ESDataMapper
 		return $this->_mapping;
 	}
 
-	public function getIndex()
+	public static function getIndex()
 	{
-		return $this->_index;
+		return static::$_index;
 	}
 
-	public function getType()
+	public static function getType()
 	{
-		return $this->_type;
+		return static::$_type;
 	}
 
     public static function getId(){
@@ -73,8 +73,8 @@ class ESDataMapper
     	$params = [];
 		$params['body']  = $entity->toArray();
 
-		$params['index'] = $this->_index;
-		$params['type']  = $this->_type;
+		$params['index'] = static::getIndex();
+		$params['type']  = static::getType();
 		$params['id']    = $entity->getId();
 
 		$ret = $this->_client->index($params);

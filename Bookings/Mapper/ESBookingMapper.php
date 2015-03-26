@@ -8,9 +8,9 @@ use Bookings\Interfaces\EntityInterface;
 class ESBookingMapper extends ESDataMapper implements DataMapperInterface
 {
 
-    protected $_index = 'bookings';
+    protected static $_index = 'bookings';
     
-    protected $_type = 'booking';
+    protected static $_type = 'booking';
 
     protected static $_id = 'bookingId';
 

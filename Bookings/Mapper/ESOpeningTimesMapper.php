@@ -7,9 +7,9 @@ use Bookings\Mapper\Interfaces\DataMapperInterface;
 class ESOpeningTimesMapper extends ESDataMapper implements DataMapperInterface
 {
 
-    protected $_index = 'openingtimes';
+    protected static $_index = 'openingtimes';
 
-    protected $_type = 'openingtimes';
+    protected static $_type = 'openingtimes';
 
     protected static $_id = 'venueId';
 

@@ -16,7 +16,7 @@ class ESOpeningTimesRepository implements RepositoryInterface, ESOpeningTimesRep
 
 	public function getById($id)
 	{
-		
+
 	}
 
 	public function getAll()

@@ -30,4 +30,13 @@ $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
 	
 });
 
+$klein->respond('GET', '/booking', function ($req, $res, $serv, $app) {
+
+	$repo = new \Bookings\Repository\ESBookingRepository($app->es->getClient());
+	$bookings = $repo->getAll();
+
+	var_dump($bookings);
+	
+});
+
 $klein->dispatch();

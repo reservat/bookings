@@ -2,6 +2,8 @@
 
 namespace Bookings\Mapper;
 
+use Bookings\Mapper\Interfaces\DataMapperInterface;
+
 class ESOpeningTimesMapper extends ESDataMapper implements DataMapperInterface
 {
 

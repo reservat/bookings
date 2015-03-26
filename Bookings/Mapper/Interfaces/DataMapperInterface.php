@@ -1,6 +1,6 @@
 <?
 
-namespace Bookings\Interfaces;
+namespace Bookings\Mapper\Interfaces;
 
 interface DataMapperInterface
 {

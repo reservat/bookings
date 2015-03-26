@@ -18,6 +18,7 @@ class Venue implements VenueInterface, EntityInterface
 	protected $_longitude = null;
 	protected $_slotInterval = null;
 	protected $_occupiedTime = null;
+	protected $_openingTimes = null;
 
 	public function __construct($name, $description, $telephone, $email, $password, $lastLogin, $postcode, $latitude, $longitude, $capacity, $slotInterval, $occupiedTime)
 	{
@@ -84,6 +85,15 @@ class Venue implements VenueInterface, EntityInterface
 		return $this->_occupiedTime;
 	}
 
+	public function getOpeningTimes()
+	{
+		if(!$this->_openingTimes){
+			
+		}
+
+		return $this->_openingTimes;
+	}
+
 	public function toArray()
 	{
 		return [
@@ -96,7 +106,8 @@ class Venue implements VenueInterface, EntityInterface
 			'latitude' => $this->_latitude,
 			'longitude' => $this->_longitude,
 			'slotInterval' => $this->_slotInterval,
-			'occupiedTime' => $this->_occupiedTime
+			'occupiedTime' => $this->_occupiedTime,
+			'openingTimes' => $this->_openingTimes
 		];
 	}
 

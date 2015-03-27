@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b172ed4cc76d10ffccb342e940513b8",
+    "hash": "d98334bf8ef22811a2fff046f44dabd5",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -412,6 +412,43 @@
             "time": "2015-03-23 18:54:34"
         },
         {
+            "name": "reservat/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reservat/Core.git",
+                "reference": "6c1ce5e1864636f26cce326792249330f2f41d72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reservat/Core/zipball/6c1ce5e1864636f26cce326792249330f2f41d72",
+                "reference": "6c1ce5e1864636f26cce326792249330f2f41d72",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ReservatCore\\": "src/ReservatCore"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Steadman",
+                    "email": "luke@steadweb.co.uk"
+                },
+                {
+                    "name": "Paul Westerdale",
+                    "email": "paul@threadstud.io"
+                }
+            ],
+            "description": "Reservat Core Interfaces",
+            "time": "2015-03-27 22:37:00"
+        },
+        {
             "name": "robmorgan/phinx",
             "version": "v0.4.3",
             "source": {
@@ -746,7 +783,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pwesterdale/openingtimes": 20
+        "pwesterdale/openingtimes": 20,
+        "reservat/core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

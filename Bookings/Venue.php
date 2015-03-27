@@ -2,7 +2,8 @@
 
 namespace Bookings;
 
-use \Bookings\Interfaces\VenueInterface;
+use ReservatCore\Interfaces\EntityInterface;
+use Bookings\Interfaces\VenueInterface;
 
 class Venue implements VenueInterface, EntityInterface
 {

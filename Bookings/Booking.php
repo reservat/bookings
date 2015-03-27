@@ -2,7 +2,7 @@
 
 namespace Bookings;
 
-use Bookings\Interfaces\EntityInterface;
+use ReservatCore\Interfaces\EntityInterface;
 use Bookings\Interfaces\BookingInterface;
 
 class Booking implements BookingInterface, EntityInterface

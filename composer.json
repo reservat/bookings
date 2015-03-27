@@ -4,7 +4,8 @@
           "klein/klein": "~2.1",
           "pwesterdale/openingtimes": "dev-master",
         "robmorgan/phinx": "0.4.*",
-        "monolog/monolog": "~1.0"
+        "monolog/monolog": "~1.0",
+        "reservat/core": "dev-master"
     },
     "autoload": {
 		"psr-4": {

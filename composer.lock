@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d98334bf8ef22811a2fff046f44dabd5",
+    "hash": "01b98f336d5d333857891c1c86a73ede",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -449,6 +449,42 @@
             "time": "2015-03-27 23:12:15"
         },
         {
+            "name": "reservat/customer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reservat/customer.git",
+                "reference": "f76f07f73b5fcc6565575cd51164faa0c392c561"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reservat/customer/zipball/f76f07f73b5fcc6565575cd51164faa0c392c561",
+                "reference": "f76f07f73b5fcc6565575cd51164faa0c392c561",
+                "shasum": ""
+            },
+            "require-dev": {
+                "robmorgan/phinx": "0.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Reservat\\": "src/Reservat"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Steadman",
+                    "email": "luke@steadweb.co.uk"
+                }
+            ],
+            "description": "Customer component for Reservat",
+            "time": "2015-03-27 23:36:23"
+        },
+        {
             "name": "robmorgan/phinx",
             "version": "v0.4.3",
             "source": {
@@ -784,7 +820,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "pwesterdale/openingtimes": 20,
-        "reservat/core": 20
+        "reservat/core": 20,
+        "reservat/customer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

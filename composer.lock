@@ -417,18 +417,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/Core.git",
-                "reference": "6c1ce5e1864636f26cce326792249330f2f41d72"
+                "reference": "49ab97e5484b3d1790157ca91846c5adc4bbcf92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/Core/zipball/6c1ce5e1864636f26cce326792249330f2f41d72",
-                "reference": "6c1ce5e1864636f26cce326792249330f2f41d72",
+                "url": "https://api.github.com/repos/reservat/Core/zipball/49ab97e5484b3d1790157ca91846c5adc4bbcf92",
+                "reference": "49ab97e5484b3d1790157ca91846c5adc4bbcf92",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ReservatCore\\": "src/ReservatCore"
+                    "Reservat\\Core\\": "src/Core"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -446,7 +446,7 @@
                 }
             ],
             "description": "Reservat Core Interfaces",
-            "time": "2015-03-27 22:37:00"
+            "time": "2015-03-27 23:12:15"
         },
         {
             "name": "robmorgan/phinx",

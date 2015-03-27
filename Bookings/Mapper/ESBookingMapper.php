@@ -2,8 +2,8 @@
 
 namespace Bookings\Mapper;
 
-use ReservatCore\Interfaces\DataMapperInterface;
-use ReservatCore\Interfaces\EntityInterface;
+use Reservat\Core\Interfaces\DataMapperInterface;
+use Reservat\Core\Interfaces\EntityInterface;
 
 class ESBookingMapper extends ESDataMapper implements DataMapperInterface
 {

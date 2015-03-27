@@ -3,7 +3,7 @@
 namespace Bookings\Mapper;
 
 use Bookings\Core\Log;
-use ReservatCore\Interfaces\EntityInterface;
+use Reservat\Core\Interfaces\EntityInterface;
 
 class ESDataMapper
 {

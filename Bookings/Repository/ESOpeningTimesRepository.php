@@ -2,7 +2,7 @@
 
 namespace Bookings\Repository;
 
-use ReservatCore\Interfaces\RepositoryInterface;
+use Reservat\Core\Interfaces\RepositoryInterface;
 use Bookings\Repository\Interfaces\ESOpeningTimesRepositoryInterface;
 use Elasticsearch\Client;
 

@@ -1,4 +1,4 @@
-<?
+<?php
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -20,6 +20,9 @@ $klein->respond(function ($request, $response, $service, $app) {
         return new Elastic($params);
     });
 
+    $app->register('db', function() use($app) {
+        //return new PDO('mysql:host='.$app->config->)
+    });
 });
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {

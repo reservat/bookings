@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cd2746ab53e96a16b9925fea67259728",
+    "hash": "0c3b9ad94960eb382cbcba64622f53be",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/booking.git",
-                "reference": "d69dcae3459844e84106f11eca358b32fb187527"
+                "reference": "9a2ffab78b1b2bcd16eb0037705d4654cd11ee4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/booking/zipball/d69dcae3459844e84106f11eca358b32fb187527",
-                "reference": "d69dcae3459844e84106f11eca358b32fb187527",
+                "url": "https://api.github.com/repos/reservat/booking/zipball/9a2ffab78b1b2bcd16eb0037705d4654cd11ee4d",
+                "reference": "9a2ffab78b1b2bcd16eb0037705d4654cd11ee4d",
                 "shasum": ""
             },
             "require": {
@@ -409,21 +409,25 @@
                 }
             ],
             "description": "Booking component for Reservat",
-            "time": "2015-03-28 09:33:20"
+            "time": "2015-03-28 10:57:42"
         },
         {
             "name": "reservat/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/reservat/Core.git",
-                "reference": "49ab97e5484b3d1790157ca91846c5adc4bbcf92"
+                "url": "https://github.com/reservat/core.git",
+                "reference": "127939215c467acf4f498c889a01757721d90b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/Core/zipball/49ab97e5484b3d1790157ca91846c5adc4bbcf92",
-                "reference": "49ab97e5484b3d1790157ca91846c5adc4bbcf92",
+                "url": "https://api.github.com/repos/reservat/core/zipball/127939215c467acf4f498c889a01757721d90b75",
+                "reference": "127939215c467acf4f498c889a01757721d90b75",
                 "shasum": ""
+            },
+            "require": {
+                "elasticsearch/elasticsearch": "~1.0",
+                "monolog/monolog": "~1.0"
             },
             "type": "library",
             "autoload": {
@@ -446,7 +450,7 @@
                 }
             ],
             "description": "Reservat Core Interfaces",
-            "time": "2015-03-27 23:12:15"
+            "time": "2015-03-28 12:01:37"
         },
         {
             "name": "reservat/customer",

@@ -1,10 +1,8 @@
 {
     "require": {
-        "elasticsearch/elasticsearch": "~1.0",
         "klein/klein": "~2.1",
         "reservat/openingtimes": "dev-master",
         "robmorgan/phinx": "0.4.*",
-        "monolog/monolog": "~1.0",
         "reservat/core": "dev-master",
         "reservat/customer": "dev-master",
         "reservat/booking": "dev-master",

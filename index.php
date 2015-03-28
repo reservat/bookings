@@ -11,6 +11,8 @@ $klein = new Klein();
 
 $klein->respond(function ($request, $response, $service, $app) {
 
+    Dotenv::load(__DIR__);
+
     $app->register('config', function() {
         return new Config();
     });

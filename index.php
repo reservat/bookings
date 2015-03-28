@@ -21,7 +21,7 @@ $klein->respond(function ($request, $response, $service, $app) {
     });
 
     $app->register('db', function() use($app) {
-        //return new PDO('mysql:host='.$app->config->)
+        return new PDO('mysql:host='.$app->config->mysql['host'].';dbname='.$app->config->mysql['db'], $app->config->mysql['user'], $app->config->mysql['password']);
     });
 });
 

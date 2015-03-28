@@ -17,6 +17,10 @@ $klein->respond(function ($request, $response, $service, $app) {
         return new Config();
     });
 
+    $app->register('log', function() {
+        return new Log();
+    });
+
     $app->register('es', function() use($app){
         $params = $app->config->es;
         return new Elastic($params);

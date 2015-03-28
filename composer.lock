@@ -417,12 +417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/booking.git",
-                "reference": "95e883f611f5d82f67f25529e521635901f9143d"
+                "reference": "d69dcae3459844e84106f11eca358b32fb187527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/booking/zipball/95e883f611f5d82f67f25529e521635901f9143d",
-                "reference": "95e883f611f5d82f67f25529e521635901f9143d",
+                "url": "https://api.github.com/repos/reservat/booking/zipball/d69dcae3459844e84106f11eca358b32fb187527",
+                "reference": "d69dcae3459844e84106f11eca358b32fb187527",
                 "shasum": ""
             },
             "require": {
@@ -449,7 +449,7 @@
                 }
             ],
             "description": "Booking component for Reservat",
-            "time": "2015-03-28 09:12:59"
+            "time": "2015-03-28 09:33:20"
         },
         {
             "name": "reservat/core",

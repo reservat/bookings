@@ -48,4 +48,10 @@ $klein->respond('GET', '/booking', function ($req, $res, $serv, $app) {
 	
 });
 
+$klein->respond('POST', '/customer', function($req, $res, $serv, $app) {
+    $customer = new \Reservat\Customer($req->param('forename'), $req->param('surname'), $req->param('telephone'));
+    $mapper = new \Reservat\Datamapper\CustomerDatamapper($app->db);
+    $mapper->insert($customer);
+});
+
 $klein->dispatch();

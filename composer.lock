@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "01b98f336d5d333857891c1c86a73ede",
+    "hash": "150677953393b55d147fe1560a55d6f1",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -410,6 +410,46 @@
                 "bookings"
             ],
             "time": "2015-03-23 18:54:34"
+        },
+        {
+            "name": "reservat/booking",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reservat/booking.git",
+                "reference": "95e883f611f5d82f67f25529e521635901f9143d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reservat/booking/zipball/95e883f611f5d82f67f25529e521635901f9143d",
+                "reference": "95e883f611f5d82f67f25529e521635901f9143d",
+                "shasum": ""
+            },
+            "require": {
+                "reservat/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Reservat\\": "src/Reservat"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Steadman",
+                    "email": "luke@steadweb.co.uk"
+                },
+                {
+                    "name": "Paul Westerdale",
+                    "email": "paul@threadstud.io"
+                }
+            ],
+            "description": "Booking component for Reservat",
+            "time": "2015-03-28 09:12:59"
         },
         {
             "name": "reservat/core",
@@ -821,7 +861,8 @@
     "stability-flags": {
         "pwesterdale/openingtimes": 20,
         "reservat/core": 20,
-        "reservat/customer": 20
+        "reservat/customer": 20,
+        "reservat/booking": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

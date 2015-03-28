@@ -6,7 +6,8 @@
         "robmorgan/phinx": "0.4.*",
         "monolog/monolog": "~1.0",
         "reservat/core": "dev-master",
-        "reservat/customer": "dev-master"
+        "reservat/customer": "dev-master",
+        "reservat/booking": "dev-master"
     },
     "autoload": {
         "psr-4": {

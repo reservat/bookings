@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c88f0ae9ef7aa48177eadbc7fc8e646d",
+    "hash": "cd2746ab53e96a16b9925fea67259728",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -525,6 +525,86 @@
             "time": "2015-03-28 10:16:15"
         },
         {
+            "name": "reservat/table",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reservat/table.git",
+                "reference": "2ecab5b6c08989b0adfe928d089655244f913484"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reservat/table/zipball/2ecab5b6c08989b0adfe928d089655244f913484",
+                "reference": "2ecab5b6c08989b0adfe928d089655244f913484",
+                "shasum": ""
+            },
+            "require-dev": {
+                "robmorgan/phinx": "0.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Reservat\\": "src/Reservat"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Steadman",
+                    "email": "luke@steadweb.co.uk"
+                },
+                {
+                    "name": "Paul Westerdale",
+                    "email": "paul@threadstud.io"
+                }
+            ],
+            "description": "Table component for Reservat",
+            "time": "2015-03-28 10:52:01"
+        },
+        {
+            "name": "reservat/venue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reservat/venue.git",
+                "reference": "249b562b3233df7184d5093fed4eb1d43e5ebd57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reservat/venue/zipball/249b562b3233df7184d5093fed4eb1d43e5ebd57",
+                "reference": "249b562b3233df7184d5093fed4eb1d43e5ebd57",
+                "shasum": ""
+            },
+            "require-dev": {
+                "robmorgan/phinx": "0.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Reservat\\": "src/Reservat"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Steadman",
+                    "email": "luke@steadweb.co.uk"
+                },
+                {
+                    "name": "Paul Westerdale",
+                    "email": "paul@threadstud.io"
+                }
+            ],
+            "description": "Venue component for Reservat",
+            "time": "2015-03-28 10:50:00"
+        },
+        {
             "name": "robmorgan/phinx",
             "version": "v0.4.3",
             "source": {
@@ -862,7 +942,9 @@
         "reservat/openingtimes": 20,
         "reservat/core": 20,
         "reservat/customer": 20,
-        "reservat/booking": 20
+        "reservat/booking": 20,
+        "reservat/venue": 20,
+        "reservat/table": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

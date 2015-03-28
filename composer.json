@@ -7,7 +7,9 @@
         "monolog/monolog": "~1.0",
         "reservat/core": "dev-master",
         "reservat/customer": "dev-master",
-        "reservat/booking": "dev-master"
+        "reservat/booking": "dev-master",
+        "reservat/venue": "dev-master",
+        "reservat/table": "dev-master"
     },
     "autoload": {
         "psr-4": {

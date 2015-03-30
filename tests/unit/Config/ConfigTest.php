@@ -1,13 +1,15 @@
 <?php
 
+use \Reservat\Core\Config;
+
 class ConfigTest extends PHPUnit_Framework_TestCase
 {
     protected $config = null;
 
     public function setUp()
     {
-        if(!$this->config instanceof \Bookings\Core\Config) {
-            $this->config = new \Bookings\Core\Config(__DIR__ . '/_files/');
+        if(!$this->config instanceof Config) {
+            $this->config = new Config(__DIR__ . '/_files/');
         }
 
         return $this->config;
@@ -15,7 +17,7 @@ class ConfigTest extends PHPUnit_Framework_TestCase
 
     public function testLoaded()
     {
-        $this->assertInstanceOf('\Bookings\Core\Config', $this->config);
+        $this->assertInstanceOf('\Reservat\Core\Config', $this->config);
         $this->assertArrayHasKey('mysql', $this->config);
     }
 
@@ -78,7 +80,7 @@ class ConfigTest extends PHPUnit_Framework_TestCase
     public function testDotEnvWithConfig()
     {
         Dotenv::load(__DIR__ . '/_files/');
-        $config = new \Bookings\Core\Config(__DIR__ . '/_files/', 'dotenv.php');
+        $config = new  Config(__DIR__ . '/_files/', 'dotenv.php');
 
         $this->assertEquals(getenv('MYSQL_USER'), $config->mysql['user']);
         $this->assertEquals(getenv('MYSQL_HOST'), $config->mysql['host']);

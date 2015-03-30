@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25bc5ceb63b8747fb6e273b5c4bcba13",
+    "hash": "60ae33182c7029c385635946f920f2ab",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -417,12 +417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/core.git",
-                "reference": "127939215c467acf4f498c889a01757721d90b75"
+                "reference": "a49c241c8e8bda0bb989b907e11e39f150ee52a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/core/zipball/127939215c467acf4f498c889a01757721d90b75",
-                "reference": "127939215c467acf4f498c889a01757721d90b75",
+                "url": "https://api.github.com/repos/reservat/core/zipball/a49c241c8e8bda0bb989b907e11e39f150ee52a6",
+                "reference": "a49c241c8e8bda0bb989b907e11e39f150ee52a6",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +450,7 @@
                 }
             ],
             "description": "Reservat Core Interfaces",
-            "time": "2015-03-28 12:01:37"
+            "time": "2015-03-30 14:52:08"
         },
         {
             "name": "reservat/customer",
@@ -937,6 +937,57 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2015-03-12 10:28:44"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Dotenv": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "homepage": "http://github.com/vlucas/phpdotenv",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2014-12-05 15:19:21"
         }
     ],
     "packages-dev": [

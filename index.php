@@ -1,4 +1,4 @@
-<?
+<?php
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -11,6 +11,8 @@ $klein = new Klein();
 
 $klein->respond(function ($request, $response, $service, $app) {
 
+    Dotenv::load(__DIR__);
+
     $app->register('config', function() {
         return new Config();
     });
@@ -20,6 +22,9 @@ $klein->respond(function ($request, $response, $service, $app) {
         return new Elastic($params);
     });
 
+    $app->register('db', function() use($app) {
+        return new PDO('mysql:host='.$app->config->mysql['host'].';dbname='.$app->config->mysql['db'], $app->config->mysql['user'], $app->config->mysql['password']);
+    });
 });
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {

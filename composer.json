@@ -3,6 +3,7 @@
         "klein/klein": "~2.1",
         "reservat/openingtimes": "dev-master",
         "robmorgan/phinx": "0.4.*",
+        "vlucas/phpdotenv": "~1.1",
         "reservat/core": "dev-master",
         "reservat/customer": "dev-master",
         "reservat/booking": "dev-master",
@@ -13,5 +14,8 @@
         "psr-4": {
             "Bookings\\": ["Bookings/"]
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*"
     }
 }

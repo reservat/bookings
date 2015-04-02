@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Klein\Klein;
 use Reservat\Core\Config;
@@ -11,10 +11,10 @@ $klein = new Klein();
 
 $klein->respond(function ($request, $response, $service, $app) {
 
-    Dotenv::load(__DIR__);
+    Dotenv::load(__DIR__ . '/../');
 
     $app->register('config', function() {
-        return new Config();
+        return new Config(__DIR__ . '/../');
     });
 
     $app->register('log', function() {

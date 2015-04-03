@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60ae33182c7029c385635946f920f2ab",
+    "hash": "25bc5ceb63b8747fb6e273b5c4bcba13",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -417,17 +417,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/core.git",
-                "reference": "54cfa39b1ea5d60e245d8b2ec1f7ba8d4ba562ee"
+                "reference": "74b87e3287c8d422b3dc480d4fc137a099a7a3ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/core/zipball/54cfa39b1ea5d60e245d8b2ec1f7ba8d4ba562ee",
-                "reference": "54cfa39b1ea5d60e245d8b2ec1f7ba8d4ba562ee",
+                "url": "https://api.github.com/repos/reservat/core/zipball/74b87e3287c8d422b3dc480d4fc137a099a7a3ab",
+                "reference": "74b87e3287c8d422b3dc480d4fc137a099a7a3ab",
                 "shasum": ""
             },
             "require": {
                 "elasticsearch/elasticsearch": "~1.0",
-                "monolog/monolog": "~1.0"
+                "monolog/monolog": "~1.0",
+                "vlucas/phpdotenv": "~1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
             },
             "type": "library",
             "autoload": {
@@ -450,7 +454,7 @@
                 }
             ],
             "description": "Reservat Core Interfaces",
-            "time": "2015-04-02 15:24:02"
+            "time": "2015-04-03 22:11:48"
         },
         {
             "name": "reservat/customer",

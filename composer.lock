@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25bc5ceb63b8747fb6e273b5c4bcba13",
+    "hash": "7f903d5449ba5de9e10df6b54555eea1",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v1.3.3",
+            "version": "v1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "a273a9583e1859e02d0676faaabe577b12427ff1"
+                "reference": "b2fc513757f6805635a34988dca97646f0ea6a4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/a273a9583e1859e02d0676faaabe577b12427ff1",
-                "reference": "a273a9583e1859e02d0676faaabe577b12427ff1",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/b2fc513757f6805635a34988dca97646f0ea6a4d",
+                "reference": "b2fc513757f6805635a34988dca97646f0ea6a4d",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +32,7 @@
                 "athletic/athletic": "~0.1",
                 "cpliakas/git-wrapper": "~1.0",
                 "mikey179/vfsstream": "~1.2",
-                "mockery/mockery": "dev-master@dev",
+                "mockery/mockery": "0.9.4",
                 "phpunit/phpunit": "3.7.*",
                 "satooshi/php-coveralls": "dev-master",
                 "symfony/yaml": "2.4.3 as 2.4.2",
@@ -40,10 +40,8 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Elasticsearch": "src/",
-                    "Elasticsearch\\Tests": "tests/",
-                    "Elasticsearch\\Benchmarks": "benchmarks/"
+                "psr-4": {
+                    "Elasticsearch\\": "src/Elasticsearch/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -61,7 +59,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2015-03-02 16:32:23"
+            "time": "2015-04-09 09:19:23"
         },
         {
             "name": "guzzle/guzzle",
@@ -157,62 +155,6 @@
                 "web service"
             ],
             "time": "2015-03-18 18:23:50"
-        },
-        {
-            "name": "klein/klein",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chriso/klein.php.git",
-                "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chriso/klein.php/zipball/5dc073f05adb67ee09680545b4cc7b0590d2559e",
-                "reference": "5dc073f05adb67ee09680545b4cc7b0590d2559e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/php-code-coverage": "1.2.x",
-                "phpunit/phpunit": "3.7.x",
-                "squizlabs/php_codesniffer": "1.4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Klein\\": "src/Klein/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris O'Hara",
-                    "email": "cohara87@gmail.com",
-                    "homepage": "http://chris6f.com/",
-                    "role": "Creator/Developer"
-                },
-                {
-                    "name": "Trevor Suarez",
-                    "email": "rican7@gmail.com",
-                    "homepage": "http://about.me/tnsuarez",
-                    "role": "Contributor/Developer"
-                }
-            ],
-            "description": "A lightning fast router for PHP",
-            "homepage": "https://github.com/chriso/klein.php",
-            "keywords": [
-                "boilerplate",
-                "router",
-                "routing",
-                "sinatra"
-            ],
-            "time": "2014-11-07 07:35:23"
         },
         {
             "name": "monolog/monolog",
@@ -377,16 +319,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/booking.git",
-                "reference": "5084bf57941be34b5f699c58b12ff2910cbc2564"
+                "reference": "fcadcfe4254dd765ebc7fdd9df4513b75195a3d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/booking/zipball/5084bf57941be34b5f699c58b12ff2910cbc2564",
-                "reference": "5084bf57941be34b5f699c58b12ff2910cbc2564",
+                "url": "https://api.github.com/repos/reservat/booking/zipball/fcadcfe4254dd765ebc7fdd9df4513b75195a3d3",
+                "reference": "fcadcfe4254dd765ebc7fdd9df4513b75195a3d3",
                 "shasum": ""
             },
             "require": {
                 "reservat/core": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*",
+                "squizlabs/php_codesniffer": "2.0.*@dev"
             },
             "type": "library",
             "autoload": {
@@ -409,7 +355,7 @@
                 }
             ],
             "description": "Booking component for Reservat",
-            "time": "2015-04-02 15:20:12"
+            "time": "2015-04-04 17:16:39"
         },
         {
             "name": "reservat/core",
@@ -417,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/core.git",
-                "reference": "74b87e3287c8d422b3dc480d4fc137a099a7a3ab"
+                "reference": "c5fac9c78a33ffc71094a1e5cc6a18cfa7d9fb39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/core/zipball/74b87e3287c8d422b3dc480d4fc137a099a7a3ab",
-                "reference": "74b87e3287c8d422b3dc480d4fc137a099a7a3ab",
+                "url": "https://api.github.com/repos/reservat/core/zipball/c5fac9c78a33ffc71094a1e5cc6a18cfa7d9fb39",
+                "reference": "c5fac9c78a33ffc71094a1e5cc6a18cfa7d9fb39",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +377,8 @@
                 "vlucas/phpdotenv": "~1.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.5.*"
+                "phpunit/phpunit": "4.5.*",
+                "squizlabs/php_codesniffer": "2.0.*@dev"
             },
             "type": "library",
             "autoload": {
@@ -454,7 +401,7 @@
                 }
             ],
             "description": "Reservat Core Interfaces",
-            "time": "2015-04-03 22:11:48"
+            "time": "2015-04-06 11:29:23"
         },
         {
             "name": "reservat/customer",
@@ -462,15 +409,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/customer.git",
-                "reference": "f76f07f73b5fcc6565575cd51164faa0c392c561"
+                "reference": "cb6575a13d35bca7aa2da7f22c1c5eafcf72bff3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/customer/zipball/f76f07f73b5fcc6565575cd51164faa0c392c561",
-                "reference": "f76f07f73b5fcc6565575cd51164faa0c392c561",
+                "url": "https://api.github.com/repos/reservat/customer/zipball/cb6575a13d35bca7aa2da7f22c1c5eafcf72bff3",
+                "reference": "cb6575a13d35bca7aa2da7f22c1c5eafcf72bff3",
                 "shasum": ""
             },
+            "require": {
+                "reservat/core": "dev-master"
+            },
             "require-dev": {
+                "phpunit/phpunit": "4.5.*",
                 "robmorgan/phinx": "0.4.*"
             },
             "type": "library",
@@ -490,7 +441,7 @@
                 }
             ],
             "description": "Customer component for Reservat",
-            "time": "2015-03-27 23:36:23"
+            "time": "2015-04-06 14:16:04"
         },
         {
             "name": "reservat/openingtimes",
@@ -578,16 +529,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reservat/venue.git",
-                "reference": "249b562b3233df7184d5093fed4eb1d43e5ebd57"
+                "reference": "bd2ee57029a19e0c66b590f821c59334269d82cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reservat/venue/zipball/249b562b3233df7184d5093fed4eb1d43e5ebd57",
-                "reference": "249b562b3233df7184d5093fed4eb1d43e5ebd57",
+                "url": "https://api.github.com/repos/reservat/venue/zipball/bd2ee57029a19e0c66b590f821c59334269d82cb",
+                "reference": "bd2ee57029a19e0c66b590f821c59334269d82cb",
                 "shasum": ""
             },
+            "require": {
+                "reservat/core": "dev-master"
+            },
             "require-dev": {
-                "robmorgan/phinx": "0.4.*"
+                "phpunit/phpunit": "4.5.*",
+                "robmorgan/phinx": "0.4.*",
+                "squizlabs/php_codesniffer": "2.0.*@dev"
             },
             "type": "library",
             "autoload": {
@@ -610,7 +566,7 @@
                 }
             ],
             "description": "Venue component for Reservat",
-            "time": "2015-03-28 10:50:00"
+            "time": "2015-04-07 13:31:26"
         },
         {
             "name": "robmorgan/phinx",
@@ -1160,16 +1116,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.15",
+            "version": "2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67"
+                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/34cc484af1ca149188d0d9e91412191e398e0b67",
-                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/934fd03eb6840508231a7f73eb8940cf32c3b66c",
+                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c",
                 "shasum": ""
             },
             "require": {
@@ -1218,7 +1174,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-24 10:06:35"
+            "time": "2015-04-11 04:35:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1355,16 +1311,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74"
+                "reference": "eab81d02569310739373308137284e0158424330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db32c18eba00b121c145575fcbcd4d4d24e6db74",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/eab81d02569310739373308137284e0158424330",
+                "reference": "eab81d02569310739373308137284e0158424330",
                 "shasum": ""
             },
             "require": {
@@ -1400,7 +1356,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-01-17 09:51:32"
+            "time": "2015-04-08 04:46:07"
         },
         {
             "name": "phpunit/phpunit",

@@ -1,6 +1,5 @@
 {
     "require": {
-        "klein/klein": "~2.1",
         "reservat/openingtimes": "dev-master",
         "robmorgan/phinx": "0.4.*",
         "reservat/core": "dev-master",

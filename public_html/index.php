@@ -33,9 +33,7 @@ $klein->respond(function ($request, $response, $service, $app) {
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
 
-	$booking = new \Reservat\Booking(1, 1, 'new', [1, 2, 3], 6, new Reservat\Core\DateTime(), new Reservat\Core\DateTime());
-	$bookingMapper = new \Reservat\Datamapper\EsBookingDatamapper($app->es->getClient());
-	$bookingMapper->insert($booking);
+	echo json_encode(['payload' => rand()]);
 	
 });
 

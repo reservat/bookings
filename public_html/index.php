@@ -33,7 +33,7 @@ $klein->respond(function ($request, $response, $service, $app) {
 
 $klein->respond('GET', '/test', function ($req, $res, $serv, $app) {
 
-	echo json_encode(['payload' => rand()]);
+	echo json_encode(['test' => 'abc']);
 	
 });
 

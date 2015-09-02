@@ -48,9 +48,34 @@ $klein->respond('GET', '/booking', function ($req, $res, $serv, $app) {
 	
 });
 
+// Find the customer by id
+// @todo - use UUID instead of auto increment id
+$klein->respond('GET', '/customer/[i:id]', function($req, $res, $serv, $app) {
+
+    // Create a CustomerRepository object and pass the instance of PDO to it
+    $repo = new \Reservat\Repository\CustomerRepository($app->db);
+
+    // Fetch the user by ID, if found, return as a JSON object, otherwise throw a 404
+    if($customer = $repo->getById($req->param('id'))->current()) {
+        $res->json($customer);
+    } else {
+        $res->code(404);
+    }
+});
+
 $klein->respond('POST', '/customer', function($req, $res, $serv, $app) {
-    $customer = new \Reservat\Customer($req->param('forename'), $req->param('surname'), $req->param('telephone'));
+    // Create the customer entity
+    $customer = new \Reservat\Customer(
+        $req->param('forename'),
+        $req->param('surname'),
+        $req->param('telephone'),
+        $req->param('email')
+    );
+
+    // Create a CustomerDatamapper object and pass the instance of PDO to it
     $mapper = new \Reservat\Datamapper\CustomerDatamapper($app->db);
+ 
+    // Insert the customer
     $mapper->insert($customer);
 });
 
